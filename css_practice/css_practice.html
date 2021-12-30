@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8" />
+		<title>ここが変わる！すごい〜</title>
+		<style>
+			body {
+				color: grey;
+				background-color: #ffc778;
+				/* font-family: 'Arial', YuGothic, 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', Meiryo, 'ＭＳ ゴシック', sans-serif; */
+			}
+			/* # は id を指定 */
+			#headline,
+			h2 {
+				color: red;
+			}
+			/* . は class を指定 */
+			.main p span {
+				color: green;
+			}
+			.px {
+				font-size: 20px;
+			}
+			.em {
+				font-size: 1.2em;
+			}
+			.center {
+				text-align: center;
+			}
+			.rei1 {
+				border-top: solid 2px #ffa07a;
+				border-left: solid 2px #ffa07a;
+			}
+			.rei2 {
+				border-bottom: solid 2px #ffa07a;
+				border-right: solid 2px #ffa07a;
+			}
+			p {
+				width: 100px;
+				height: 100px;
+				background: orange;
+			}
+			/* ↓id="nav"の中のulに対してCSSを適用*/
+			#nav ul {
+				list-style-type: none; /*箇条書きのポッチを消す*/
+				text-align: center; /*左右中央寄せは親要素に対して指定*/
+			}
+
+			/* ↓id="nav"の中のulの中のliに対してCSSを適用*/
+			#nav ul li {
+				display: inline-block; /*inline-blockにします*/
+				width: 80px; /*幅も指定できる*/
+				padding: 10px 0; /*余白も指定できる*/
+				margin: 10px 0; /*余白も指定できる*/
+				vertical-align: middle; /*縦の表示位置も指定できる*/
+				background: skyblue; /*背景を水色に*/
+				font-weight: bold; /*文字を太字に*/
+				color: white; /*文字色を白に*/
+			}
+			a {
+				cursor: pointer;
+			}
+			blockquote {
+				position: relative;
+				background: #efefef; /*背景色*/
+				padding: 20px 10px 15px; /*ボックス内の余白*/
+			}
+
+			blockquote:before {
+				position: absolute;
+				font-family: FontAwesome;
+				content: '\f10d';
+				top: 10px; /*上からの距離*/
+				left: 10px; /*左からの距離*/
+				color: silver;
+				font-size: 1.5em;
+			}
+		</style>
+	</head>
+	<body>
+		<p><img src="https://saruwakakun.com/wp-content/uploads/2016/11/IMG_9164.jpeg" alt="サルワカくんの顔" /></p>
+		<div id="nav">
+			<ul>
+				<li>HOME</li>
+				<li>HTML</li>
+				<li>CSS</li>
+			</ul>
+		</div>
+		<div id="headline">
+			<h1>CSS入門</h1>
+			<p class="em">これは段落です。</p>
+		</div>
+		<div class="main">
+			<h2>これは見出しです。</h2>
+			<p>これは<span class="light">例</span>です。</p>
+			<p class="px center">
+				<a href="https://saruwakakun.com/">ホームへ</a>
+				戻ります。
+			</p>
+		</div>
+		<p class="rei1">上と左にだけ線</p>
+		<p class="rei2">下と右にだけ線</p>
+		<blockquote>
+			<p>これは引用の文章です。</p>
+		</blockquote>
+		<blockquote>
+			<p>これは引用の文章です。</p>
+		</blockquote>
+	</body>
+</html>
